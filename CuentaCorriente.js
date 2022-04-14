@@ -9,4 +9,8 @@ export class CuentaCorriente extends Cuenta{
         super(agencia,cliente,numeroDeCuenta,0);
         CuentaCorriente.cantidadCuentas++;
     }
+    prueba(){
+        super.prueba();
+        console.log("metodo hijo");
+    }
 }
