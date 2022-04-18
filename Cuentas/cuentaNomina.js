@@ -7,5 +7,4 @@ export class CuentaNomina extends Cuenta{
     retirarDeCuenta(valor){
         super._retirarDeCuenta(valor,1);
     }
-
 }
