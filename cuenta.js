@@ -9,6 +9,9 @@ export class Cuenta{
         return this.#cliente;
     }
     constructor(agencia,cliente,numeroDeCuenta,saldo){
+        if(this.constructor == Cuenta){//cuenta es una clase abstracta que solo puede ser exendida no instanciada
+            throw new Error("No se debe instanciar objetos de la clase cuenta");
+        }
         this.#cliente = cliente;
         this.numeroDeCuenta = numeroDeCuenta;
         this.agencia= agencia;
