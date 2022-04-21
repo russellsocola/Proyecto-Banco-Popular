@@ -15,9 +15,8 @@ const empleado = new Empleado("Juan Perez",75198643,10000);
 const gerente = new Gerente("Pedro Rivas",75198644,12000);
 const director = new Director("Elena Moreno",75198645,15000);
 
-//console.log(empleado.verBonificacion());
 empleado.asignarClave("12345");
-//console.log(gerente.verBonificacion());
-//console.log(director.verBonificacion());
 
 console.log(SistemaAutenticacion.login(empleado,"12345"));
+gerente.asignarClave("11111");
+console.log(SistemaAutenticacion.login(gerente,"1111"));
